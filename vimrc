@@ -14,6 +14,8 @@ set encoding=utf-8
 let mapleader = "\<Space>"
 
 
+"  http://www.alexeyshmalko.com/2014/youcompleteme-ultimate-autocomplete-plugin-for-vim/
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 
 " http://stevelosh.com/blog/2010/09/coming-home-to-vim/
@@ -41,9 +43,20 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+
+"  https://jeffkreeftmeijer.com/vim-number/
 set relativenumber
+set number
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
 set undofile
 
+"  https://stackoverflow.com/questions/237289/vim-configure-line-number-coloring
+:highlight LineNr ctermfg=grey
+:highlight CursorLineNr ctermfg=green
 
 "  fix Vim’s horribly broken default regex “handling” by automatically inserting a \v before any string you search for:
 nnoremap / /\v
@@ -115,6 +128,8 @@ vnoremap K :m '<-2<CR>gv=gv
 
 " speichern:
 nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>r :set relativenumber!<CR>
 
 " Use Arrow Keys to resize window
 noremap <up>    <C-W>+
