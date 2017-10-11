@@ -1,6 +1,10 @@
 # dotfiles
 my dotfiles
 
+first: execute "bash makesymlinks.sh"
+second: execute "bash go-vim.sh"
+third: execute "bash.go-YCM.sh"
+
 thanks to Michael Smalley	for the very nice instructions on how to create your own dotfiles repository:
 http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
 
