@@ -71,4 +71,9 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+#  http://math.hws.edu/eck/cs225/s03/compiler.html
+alias c="g++ -g -Wall"
+
+
+
 source ~/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

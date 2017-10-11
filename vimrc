@@ -10,7 +10,7 @@ filetype plugin indent on
 syntax on
 set encoding=utf-8
 
-
+noremap <Space> <Nop>
 let mapleader = "\<Space>"
 
 
@@ -79,7 +79,7 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 " handle long lines correctly:
-" See :help fo-table and the Vimcasts on soft wrapping and hard wrapping 
+" See :help fo-table and the Vimcasts on soft wrapping and hard wrapping
 set wrap
 set textwidth=79
 set formatoptions=qrn1
@@ -122,14 +122,19 @@ set showbreak=...
 
 
 " Move visual block
-" Jetzt lässt sich der ganze Block im Visual Mode markieren und anschließend mit Joder K verschieben. 
+" Jetzt lässt sich der ganze Block im Visual Mode markieren und anschließend mit Joder K verschieben.
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
 " speichern:
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>r :set relativenumber!<CR>
+nnoremap <leader>n :set relativenumber!<CR>
+nnoremap <F7> :w<CR> :!g++ -g -Wall % -o
+nnoremap <F8> :w<CR> :!g++ -g -Wall % -o %< && ./%< <CR>
+" In the above command, "<" after "%" removes extension and dot (foo.c => foo), so "%<" is the file basename.
+nnoremap <leader>e :!vim ~/.vimrc<CR>
+nnoremap <leader>E :source ~/.vimrc<CR>
 
 " Use Arrow Keys to resize window
 noremap <up>    <C-W>+
