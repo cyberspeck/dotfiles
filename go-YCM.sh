@@ -5,7 +5,7 @@ cd vim
 mkdir pack
 cd pack
 mkdir cyberspeck
-cd cybersepck
+cd cyberspeck
 mkdir start
 cd start
 
