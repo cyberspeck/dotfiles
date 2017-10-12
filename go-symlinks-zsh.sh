@@ -57,6 +57,8 @@ fi
 
 install_zsh
 
+sudo apt install trash-cli
+
 cd $dir
 git rm -r zsh-syntax-highlighting -f
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git zsh-syntax-highlighting

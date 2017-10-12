@@ -73,6 +73,10 @@ source $ZSH/oh-my-zsh.sh
 
 #  http://math.hws.edu/eck/cs225/s03/compiler.html
 alias c="g++ -g -Wall"
+#  https://ericlin1001.github.io/use-trash-instead-of-rm/
+#  https://github.com/andreafrancia/trash-cli
+alias del="trash"
+alias del-restore="restore-trash" # since trash-restore is easy to use than original restore-trash.
 
 
 
