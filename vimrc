@@ -52,7 +52,10 @@ set number
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
+
+ " Maintain undo history between sessions
 set undofile
+set undodir=~/.undodir
 
 "  https://stackoverflow.com/questions/237289/vim-configure-line-number-coloring
 :highlight LineNr ctermfg=grey
