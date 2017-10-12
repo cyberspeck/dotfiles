@@ -1,5 +1,6 @@
 # ignore other repositories
 
+vim/.netrwhist
 oh-my-zsh/
 vim/pack/
 zsh-syntax-highlighting/
