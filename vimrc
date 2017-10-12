@@ -6,6 +6,7 @@ set secure
 
 inoremap jk <ESC>
 
+" http://vim.wikia.com/wiki/Indenting_source_code
 filetype plugin indent on
 syntax on
 set encoding=utf-8
@@ -93,7 +94,7 @@ set formatoptions=qrn1
 set colorcolumn=85
 
 " makes Vim show invisible characters with the same characters that TextMate uses:
-set list
+nnoremap <leader>i :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 " movement by file line instead of screen line:
@@ -147,3 +148,11 @@ noremap <up>    <C-W>+
 noremap <down>  <C-W>-
 noremap <left>  3<C-W><
 noremap <right> 3<C-W>>
+
+" Changing focus between split windows
+" http://vimcasts.org/episodes/working-with-windows/
+" http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
