@@ -53,9 +53,12 @@ set number
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
 
- " Maintain undo history between sessions
+"  https://advancedweb.hu/2017/09/19/vim-persistent-undo/
+if !isdirectory("/tmp/.vim-undo-dir")
+    call mkdir("/tmp/.vim-undo-dir", "", 0700)
+endif
+set undodir=/tmp/.vim-undo-dir
 set undofile
-set undodir=~/.undodir
 
 "  https://stackoverflow.com/questions/237289/vim-configure-line-number-coloring
 :highlight LineNr ctermfg=grey
