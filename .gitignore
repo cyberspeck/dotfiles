@@ -1,5 +1,5 @@
 # ignore other repositories
 
-oh-my-zsh
-vim/pack
-zsh-syntax-highlighting
+oh-my-zsh/
+vim/pack/
+zsh-syntax-highlighting/
