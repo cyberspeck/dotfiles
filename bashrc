@@ -123,3 +123,6 @@ fi
 if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
+
+# added by Anaconda2 installer
+export PATH="/home/david/anaconda2/bin:$PATH"
