@@ -61,10 +61,6 @@ endif
 set undodir=/tmp/.vim-undo-dir
 set undofile
 
-"  https://stackoverflow.com/questions/237289/vim-configure-line-number-coloring
-:highlight LineNr ctermfg=grey
-:highlight CursorLineNr ctermfg=green
-
 "  fix Vim’s horribly broken default regex “handling” by automatically inserting a \v before any string you search for:
 nnoremap / /\v
 vnoremap / /\v
@@ -90,8 +86,6 @@ vnoremap <tab> %
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-" show a colored column at 85 characters
-set colorcolumn=85
 
 " makes Vim show invisible characters with the same characters that TextMate uses:
 nnoremap <leader>i :set list!<CR>
@@ -160,6 +154,14 @@ map <C-l> <C-w>l
 " Apply YCM FixIt
 map <F9> :YcmCompleter FixIt<CR>
 
+colorscheme torte
 " change color of syntax highlighting
 " https://github.com/Valloric/YouCompleteMe#diagnostic-highlighting-groups
-highlight YcmErrorLine ctermbg=lightblue
+" highlight YcmErrorLine ctermbg=lightblue
+
+"  https://stackoverflow.com/questions/237289/vim-configure-line-number-coloring
+:highlight LineNr ctermfg=grey
+:highlight CursorLineNr ctermfg=green
+
+" show a colored column at 85 characters
+set colorcolumn=85
