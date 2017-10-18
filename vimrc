@@ -159,3 +159,7 @@ map <C-l> <C-w>l
 
 " Apply YCM FixIt
 map <F9> :YcmCompleter FixIt<CR>
+
+" change color of syntax highlighting
+" https://github.com/Valloric/YouCompleteMe#diagnostic-highlighting-groups
+highlight YcmErrorLine ctermbg=lightblue
