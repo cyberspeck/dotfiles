@@ -137,6 +137,9 @@ nnoremap <F8> :w<CR> :!g++ -g -Wall % -o %< && ./%< <CR>
 nnoremap <leader>e :!vim ~/.vimrc<CR>
 nnoremap <leader>E :source ~/.vimrc<CR>
 
+" In visual mode mark lines, then execute following to put // in front of line:
+vnoremap <leader>c :s/^/\/\//<CR>:noh<cr>
+
 " Use Arrow Keys to resize window
 noremap <up>    <C-W>+
 noremap <down>  <C-W>-
