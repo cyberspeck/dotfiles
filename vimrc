@@ -118,7 +118,7 @@ nnoremap <leader>v V`]
 " https://flore.nz/blog/vim-tips
 
 " der Zeilenumbruch wird mit einem beliebigen Zeichen dargestellt.
-set breakindent
+" set breakindent
 set showbreak=...
 
 
@@ -167,4 +167,4 @@ colorscheme torte
 :highlight CursorLineNr ctermfg=green
 
 " show a colored column at 85 characters
-set colorcolumn=85
+" set colorcolumn=85
