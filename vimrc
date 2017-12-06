@@ -111,6 +111,12 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 " alterativ: remove unwanted trailing whitespaces in the whole file
 " nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
+" y and p to/from system clipboard:
+" http://vim.wikia.com/wiki/Copy_and_paste_between_sessions_using_a_temporary_file
+vmap <C-c> "*y     " Yank current selection into system clipboard
+nmap <C-c> "*Y     " Yank current line into system clipboard (if nothing is selected)
+nmap <C-v> "*p     " Paste from system clipboard
+
 "reselect the text that was just pasted so I can perform commands (like indentation) on it
 nnoremap <leader>v V`]
 
