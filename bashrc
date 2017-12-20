@@ -125,4 +125,4 @@ if [ -x /usr/bin/mint-fortune ]; then
 fi
 
 # added by Anaconda2 installer
-export PATH="/home/david/anaconda2/bin:$PATH"
+export PATH="/home/david/anaconda3/bin:$PATH"

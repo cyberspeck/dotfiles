@@ -82,4 +82,4 @@ alias del-restore="restore-trash" # since trash-restore is easy to use than orig
 
 source ~/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export PATH=~/anaconda2/bin:$PATH
+export PATH=~/anaconda3/bin:$PATH
