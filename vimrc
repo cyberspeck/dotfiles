@@ -53,6 +53,7 @@ set number
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
+nnoremap <leader>n :set relativenumber!<CR>
 
 "  https://advancedweb.hu/2017/09/19/vim-persistent-undo/
 if !isdirectory("/tmp/.vim-undo-dir")
@@ -90,6 +91,11 @@ set formatoptions=qrn1
 " makes Vim show invisible characters with the same characters that TextMate uses:
 nnoremap <leader>i :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
+"
+" strip all trailing whitespace in the current file
+nnoremap <leader>I :%s/\s\+$//<cr>:let @/=''<CR>
+" alterativ: remove unwanted trailing whitespaces in the whole file
+" nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " movement by file line instead of screen line:
 nnoremap j gj
@@ -106,19 +112,12 @@ nnoremap ; :
 " save when focus is lost
 au FocusLost * :wa
 
-" strip all trailing whitespace in the current file
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
-" alterativ: remove unwanted trailing whitespaces in the whole file
-" nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
-
 " y and p to/from system clipboard:
 " http://vim.wikia.com/wiki/Copy_and_paste_between_sessions_using_a_temporary_file
-vmap <C-c> "+y     " Yank current selection into system clipboard
-nmap <C-c> "+Y     " Yank current line into system clipboard (if nothing is selected)
-nmap <C-v> "+p     " Paste from system clipboard
+vmap <leader>c "+y     " Yank current selection into system clipboard
+nmap <leader>c "+Y     " Yank current line into system clipboard (if nothing is selected)
+nmap <leader>v "+p     " Paste from system clipboard
 
-"reselect the text that was just pasted so I can perform commands (like indentation) on it
-nnoremap <leader>v V`]
 
 
 " https://flore.nz/blog/vim-tips
@@ -134,17 +133,24 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
 " speichern:
-nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>n :set relativenumber!<CR>
+nnoremap <leader>Q :q!<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>W :w!<CR>
+
+nnoremap <leader>m :!make<CR>
 nnoremap <F7> :w<CR> :!g++ -g -Wall % -o
 nnoremap <F8> :w<CR> :!g++ -g -Wall % -o %< && ./%< <CR>
 " In the above command, "<" after "%" removes extension and dot (foo.c => foo), so "%<" is the file basename.
+
 nnoremap <leader>e :!vim ~/.vimrc<CR>
 nnoremap <leader>E :source ~/.vimrc<CR>
 
+" in normal mode, make Y behave in the same manner as D and C
+nmap Y y$
+
 " In visual mode mark lines, then execute following to put // in front of line:
-vnoremap <leader>c :s/^/\/\//<CR>:noh<cr>
+vnoremap <leader>7 :s/^/\/\//<CR>:noh<cr>
 
 " Use Arrow Keys to resize window
 noremap <up>    <C-W>+
