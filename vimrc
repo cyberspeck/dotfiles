@@ -180,3 +180,16 @@ colorscheme torte
 
 " show a colored column at 85 characters
 " set colorcolumn=85
+
+
+" https://www.ostechnix.com/use-spell-check-feature-vim-text-editor/
+" https://stackoverflow.com/questions/5040580/is-it-possible-to-toggle-a-vim-option-when-switching-to-insert-mode
+" autocmd InsertEnter * setlocal spell spelllang=en_gb
+" autocmd InsertLeave * setlocal nospell
+nnoremap <leader>s :set spell! spelllang=en_gb<CR>
+nnoremap <leader>a [s
+nnoremap <leader>A [S
+nnoremap <leader>d ]s
+nnoremap <leader>D ]S
+nnoremap <leader>z z=
+nnoremap <leader>Z zg
