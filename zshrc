@@ -88,3 +88,7 @@ export PATH=~/anaconda2/bin:$PATH
 export EDITOR=vim
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias config="git --git-dir=.dotfiles --work-tree=/home/david/"
+alias configs="git --git-dir=.dotfiles --work-tree=/home/david/ status -uno"
+
