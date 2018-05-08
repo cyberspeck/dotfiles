@@ -79,6 +79,7 @@ alias del="trash"
 alias del-restore="restore-trash" # since trash-restore is easy to use than original restore-trash.
 
 
+export PATH=~/tmux/bin:$PATH
 
 source ~/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
