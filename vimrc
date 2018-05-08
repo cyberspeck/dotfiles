@@ -187,6 +187,7 @@ colorscheme torte
 " autocmd InsertEnter * setlocal spell spelllang=en_gb
 " autocmd InsertLeave * setlocal nospell
 nnoremap <leader>s :set spell! spelllang=en_gb<CR>
+nnoremap <leader>S :set spell! spelllang=de_at<CR>
 nnoremap <leader>a [s
 nnoremap <leader>A [S
 nnoremap <leader>d ]s
