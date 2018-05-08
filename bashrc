@@ -133,3 +133,5 @@ fi
 export PATH="/home/david/anaconda3/bin:$PATH"
 export PATH="/home/david/anaconda2/bin:$PATH"
 export EDITOR=vim
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

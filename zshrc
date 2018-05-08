@@ -85,3 +85,5 @@ source ~/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH=~/anaconda3/bin:$PATH
 export PATH=~/anaconda2/bin:$PATH
 export EDITOR=vim
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
