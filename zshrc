@@ -76,7 +76,9 @@ alias del="trash"
 alias del-restore="restore-trash" # since trash-restore is easy to use than original restore-trash.
 
 
-export PATH=~/tmux/bin:$PATH
+export PATH=/opt/tmux/bin:$PATH
+export PATH=/opt/gnuplot-5.2.3/bin:$PATH
+
 export PATH=~/anaconda3/bin:$PATH
 export PATH=~/anaconda2/bin:$PATH
 export EDITOR='vim'
