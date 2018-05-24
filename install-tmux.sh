@@ -28,3 +28,6 @@ cd ../
 
 # install tmuxp
 pip install --user tmuxp
+
+# install xclip for better copy/paste
+sudo apt install xclip
