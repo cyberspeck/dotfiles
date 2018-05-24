@@ -25,3 +25,6 @@ cd tmux-2.7
 make
 sudo make install
 cd ../
+
+# install tmuxp
+pip install --user tmuxp
