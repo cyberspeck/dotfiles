@@ -15,9 +15,11 @@ echo -n "To finish setup: Open texstudio -> Options -> Build -> set 'Default Bib
 echo -n "Then, enable 'Advanced Options' and then choose 'Adv. Editor' and activate Line Numbers."
 echo -n "Optionally, change GUI scaling and font size"
 
+echo -n "Now you might want to install Jabref, too."
+echo -n "details on how to do that can be found in this bash script as comments."
 # check your java version:
 #java -version
-# for ubuntu 16.04:
+# for ubuntu >=16.04:
 #sudo apt install openjfx
 # download:
 #https://www.fosshub.com/JabRef.html/JabRef-4.1.jar
@@ -28,6 +30,7 @@ echo -n "Optionally, change GUI scaling and font size"
 # then navigate to:
 #cd ~/.local/share/applications
 # and add something like this:
+# create file named "JabRef.desktop" with this content:
 #[Desktop Entry]
 #Type=Application
 #Terminal=false

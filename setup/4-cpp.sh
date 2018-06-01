@@ -1,7 +1,7 @@
 #!/bin/bash
 ############################
 # .make.sh
-# This script sets up git
+# This script installs dependencies for debugging and compiling openMPI applications (e.g. Palabos)
 ############################
 
 # install debugger:

@@ -2,6 +2,7 @@
 ############################
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+# and installs zsh and oh-my-zsh
 ############################
 
 ########## Variables
@@ -56,8 +57,6 @@ fi
 }
 
 install_zsh
-
-sudo apt install trash-cli
 
 cd $dir
 git rm -r zsh-syntax-highlighting -f

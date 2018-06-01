@@ -1,5 +1,16 @@
+#!/bin/bash
+############################
+# .make.sh
+# This script installs vim and plug-ins
+# https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+############################
+
+sudo apt install vim-gtk
+
 sudo apt-get install build-essential cmake
 sudo apt-get install python-dev python3-dev
+# maybe also need for:?
+# sudo apt install libclang
 
 cd vim
 mkdir pack
