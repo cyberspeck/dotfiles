@@ -130,7 +130,7 @@ if [ -x /usr/bin/mint-fortune ]; then
 fi
 
 # added by Anaconda3 installer
-export PATH="~/anaconda3/bin:$PATH"
+export PATH=~/anaconda3/bin:$PATH
 export EDITOR=vim
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
