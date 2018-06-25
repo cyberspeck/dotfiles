@@ -3,7 +3,7 @@
 # .make.sh
 # This script sets up git
 # installs
-#   gnuplot tmux paraview trash-cli gimp
+#   gnuplot tmux paraview trash-cli gimp ffmpeg
 ############################
 sudo apt install git
 
@@ -17,3 +17,4 @@ sudo apt install tmux
 sudo apt install paraview paraview-doc
 sudo apt install trash-cli
 sudo apt install gimp gimp-help-en gimp-help-de
+sudo apt install ffmpeg
