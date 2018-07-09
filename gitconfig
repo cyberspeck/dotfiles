@@ -1,0 +1,7 @@
+[alias]
+    co = checkout
+    br = branch
+[user]
+	email = cyberspeck@users.noreply.github.com
+	name = cyberspeck
+
