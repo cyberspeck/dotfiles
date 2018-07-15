@@ -12,6 +12,7 @@ sudo apt-get install python-dev python3-dev
 # maybe also need for:?
 # sudo apt install libclang
 
+cd ~/dotfiles
 cd vim
 mkdir pack
 cd pack
