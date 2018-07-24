@@ -24,3 +24,4 @@ sudo apt install trash-cli
 sudo apt install gimp gimp-help-en gimp-help-de
 sudo apt install ffmpeg
 sudo apt install htop
+sudo apt install imagemagick
