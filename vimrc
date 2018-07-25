@@ -194,3 +194,18 @@ nnoremap <leader>d ]s
 nnoremap <leader>D ]S
 nnoremap <leader>z z=
 nnoremap <leader>Z zg
+
+" AIRLINE
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
+
+" buffers
+" https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
+" http://www.blog.bdauria.com/?p=609
+:nnoremap <leader><Tab> :bnext<CR>
+:nnoremap <leader><S-Tab> :bprevious<CR>
+:nnoremap <C-W> :bdelete<CR>
