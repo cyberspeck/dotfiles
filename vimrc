@@ -206,6 +206,15 @@ set t_Co=256
 " buffers
 " https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
 " http://www.blog.bdauria.com/?p=609
-:nnoremap <leader><Tab> :bnext<CR>
-:nnoremap <leader><S-Tab> :bprevious<CR>
-:nnoremap <C-W> :bdelete<CR>
+nnoremap <leader><Tab> :bnext<CR>
+nnoremap <leader><S-Tab> :bprevious<CR>
+nnoremap <leader>b :enew<CR>
+nnoremap <leader>B :bdelete<CR>
+" TIP:
+" open file under cursor in new buffer: gf
+
+" tabs
+map 0gt :tablast<CR>
+map <leader>t :tabe<CR>
+map <leader>T :tabclose<CR>
+nnoremap tf :tabf<CR>
