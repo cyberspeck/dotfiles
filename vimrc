@@ -218,3 +218,9 @@ map 0gt :tablast<CR>
 map <leader>t :tabe<CR>
 map <leader>T :tabclose<CR>
 nnoremap tf :tabf<CR>
+" go to last active tab:
+if !exists('g:lasttab')
+  let g:lasttab = 1
+endif
+nmap gG :exe "tabn ".g:lasttab<CR>
+au TabLeave * let g:lasttab = tabpagenr()
