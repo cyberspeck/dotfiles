@@ -11,6 +11,7 @@ git config --global user.name cyberspeck
 git config --global user.email cyberspeck@users.noreply.github.com
 git config --global push.default simple
 git config --global credential.helper "cache --timeout=3600"
+git config --global alias.co checkout
 
 sudo apt install gnuplot gnuplot-doc
 sudo apt install xclip
