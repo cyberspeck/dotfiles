@@ -13,6 +13,7 @@ set encoding=utf-8
 
 noremap <Space> <Nop>
 let mapleader = "\<Space>"
+let maplocalleader = "ü"
 
 
 "  http://www.alexeyshmalko.com/2014/youcompleteme-ultimate-autocomplete-plugin-for-vim/
@@ -224,3 +225,14 @@ if !exists('g:lasttab')
 endif
 nmap gG :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
+
+let g:tex_flavor = 'latex'
+
+" inoremap ´ `
+" nnoremap ´ `
+" vnoremap ´ `
+" easier use parenthesis (for e.g. latex)
+imap ö [
+imap Ö {
+imap ä ]
+imap Ä }
