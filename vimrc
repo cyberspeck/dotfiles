@@ -113,11 +113,15 @@ nnoremap ; :
 " save when focus is lost
 au FocusLost * :wa
 
+" http://vimcasts.org/episodes/accessing-the-system-clipboard-from-vim/
+if has('unnamedplus')
+  set clipboard=unnamed,unnamedplus
+endif
 " y and p to/from system clipboard:
 " http://vim.wikia.com/wiki/Copy_and_paste_between_sessions_using_a_temporary_file
-vmap <leader>c "+y     " Yank current selection into system clipboard
-nmap <leader>c "+Y     " Yank current line into system clipboard (if nothing is selected)
-nmap <leader>v "+p     " Paste from system clipboard
+" vmap <leader>c "+y     " Yank current selection into system clipboard
+" nmap <leader>c "+Y     " Yank current line into system clipboard (if nothing is selected)
+" nmap <leader>v "+p     " Paste from system clipboard
 
 
 
