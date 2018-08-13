@@ -144,8 +144,11 @@ nnoremap <F7> :w<CR> :!g++ -g -Wall % -o
 nnoremap <F8> :w<CR> :!g++ -g -Wall % -o %< && ./%< <CR>
 " In the above command, "<" after "%" removes extension and dot (foo.c => foo), so "%<" is the file basename.
 
-nnoremap <leader>e :!vim ~/.vimrc<CR>
+" http://learnvimscriptthehardway.stevelosh.com/chapters/07.html
+nnoremap <leader>e :tabe ~/.vimrc<cr>
 nnoremap <leader>E :source ~/.vimrc<CR>
+" nnoremap <leader>e :tabe $MYVIMRC<cr>
+" nnoremap <leader>E :source $MYVIMRC<CR>
 
 " in normal mode, make Y behave in the same manner as D and C
 nmap Y y$
