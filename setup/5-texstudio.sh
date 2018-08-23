@@ -7,7 +7,7 @@
 sudo add-apt-repository ppa:sunderme/texstudio
 sudo apt-get update
 sudo apt install texstudio
-sudo apt install texlive-base texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-fonts-recommended
+sudo apt install texlive-base texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-fonts-recommended texlive-fonts-extra
 sudo apt install texlive-latex-recommended-doc
 sudo apt install biber texlive-bibtex-extra texlive-lang-german
 
@@ -17,6 +17,8 @@ echo -n "Optionally, change GUI scaling and font size"
 
 echo -n "Now you might want to install Jabref, too."
 echo -n "details on how to do that can be found in this bash script as comments."
+echo -n "or here: https://help.jabref.org/en/Installation"
+
 # check your java version:
 #java -version
 # for ubuntu >=16.04:
