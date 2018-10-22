@@ -67,6 +67,10 @@ set undofile
 nnoremap / /\v
 vnoremap / /\v
 
+"  replace word under cursor
+nnoremap <leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+
 "  If you search for an all-lowercase string your search will be case-insensitive, but if one or more characters is uppercase the search will be case-sensitive:
 set ignorecase
 set smartcase
@@ -110,8 +114,6 @@ vnoremap <F1> <ESC>
 " ; does the same as :
 nnoremap ; :
 
-" save when focus is lost
-au FocusLost * :wa
 
 " http://vimcasts.org/episodes/accessing-the-system-clipboard-from-vim/
 if has('unnamedplus')
@@ -143,7 +145,7 @@ nnoremap <leader>Q :q!<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>W :w!<CR>
 
-nnoremap <leader>m :!make<CR>
+nnoremap <leader>m :!clear<CR> :!make<CR>
 nnoremap <F7> :w<CR> :!g++ -g -Wall % -o
 nnoremap <F8> :w<CR> :!g++ -g -Wall % -o %< && ./%< <CR>
 " In the above command, "<" after "%" removes extension and dot (foo.c => foo), so "%<" is the file basename.
@@ -200,7 +202,7 @@ nnoremap <leader>a [s
 nnoremap <leader>A [S
 nnoremap <leader>d ]s
 nnoremap <leader>D ]S
-nnoremap <leader>z z=
+nnoremap <leader>z z=1<CR><CR>
 nnoremap <leader>Z zg
 
 " AIRLINE
@@ -243,3 +245,6 @@ imap ö [
 imap Ö {
 imap ä ]
 imap Ä }
+
+" UltiSnips and YCM:
+" https://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme
