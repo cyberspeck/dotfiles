@@ -27,3 +27,5 @@ sudo apt install ffmpeg
 sudo apt install htop
 sudo apt install imagemagick
 sudo apt install latexmk
+
+#export PATH=$PATH:$HOME/.local/bin
