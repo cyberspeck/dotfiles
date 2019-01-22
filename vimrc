@@ -248,3 +248,5 @@ imap Ä }
 
 " UltiSnips and YCM:
 " https://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme
+
+nnoremap <buffer> <F9> :exec '!clear; python3' shellescape(@%, 1)<cr>
