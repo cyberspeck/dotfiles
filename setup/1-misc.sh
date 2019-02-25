@@ -18,12 +18,12 @@ sudo apt install gnuplot gnuplot-doc
 sudo apt install xclip
 sudo apt install python-pip
 sudo apt install python-setuptools
-pip install wheel
+#pip install --user wheel
+sudo apt install python-wheel
 sudo apt install tmux
-pip install --user tmuxp
-sudo apt install paraview paraview-doc
+#pip install --user tmuxp
+sudo apt install tmuxp
 sudo apt install trash-cli
-sudo apt install gimp gimp-help-en gimp-help-de
 sudo apt install ffmpeg
 sudo apt install htop
 sudo apt install imagemagick
