@@ -1,5 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+#
+if [ -f /etc/bashrc ]; then
+  /etc/bashrc
+fi
+
+export PATH=/etc/alternatives:$PATH
+
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
