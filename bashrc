@@ -135,3 +135,6 @@ export PATH=~/anaconda3/bin:$PATH
 export EDITOR=vim
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+
+export DISPLAY=localhost:0.0

@@ -135,3 +135,5 @@ bindkey -M viins 'jk' vi-cmd-mode
 # https://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
 # so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
 stty -ixon
+
+export DISPLAY=localhost:0.0
