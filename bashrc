@@ -2,7 +2,10 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+
+
 export PATH=/etc/alternatives:$PATH
+export PATH=/opt/rh/devtoolset-6/root/bin:$PATH
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -104,7 +107,7 @@ alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+#alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -138,3 +141,7 @@ export EDITOR=vim
 
 
 export DISPLAY=localhost:0.0
+
+if [ "$HOSTNAME" == C5LIRA11 ]; then
+    zsh
+fi

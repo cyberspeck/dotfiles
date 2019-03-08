@@ -6,6 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 export PATH=/etc/alternatives:$PATH
+export PATH=/opt/rh/devtoolset-6/root/bin:$PATH
 
 
 # Path to your oh-my-zsh installation.
