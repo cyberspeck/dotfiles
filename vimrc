@@ -252,3 +252,5 @@ imap Ä }
 nnoremap <buffer> <F6> :exec '!clear; python36' shellescape(@%, 1)<cr>
 
 nnoremap <C-T> :term ++rows=20 <CR>
+" https://vim.fandom.com/wiki/Toggle_auto-indenting_for_code_paste
+set pastetoggle=<F2>
