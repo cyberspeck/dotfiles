@@ -236,6 +236,7 @@ nmap gG :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
 
 let g:tex_flavor = 'latex'
+let g:vimtex_view_general_viewer = 'zathura'
 
 " inoremap ´ `
 " nnoremap ´ `
