@@ -2,6 +2,7 @@
 
 # install neovim
 pip install neovim
+pip install neovim-remote
 
 dot=~/dotfiles                    # dotfiles directory
 dir=~/.config/nvim                # nvim config directory
