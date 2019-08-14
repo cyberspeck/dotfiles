@@ -101,8 +101,8 @@ export PATH=$PATH:$HOME/.local/bin
 # added by Anaconda3 installer
 export PATH=~/anaconda3/bin:$PATH
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 
 alias config="git --git-dir=.dotfiles --work-tree=/home/david/"
