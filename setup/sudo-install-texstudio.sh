@@ -1,11 +1,10 @@
 #!/bin/bash
 ############################
-# .make.sh
 # This script installs texstudio
 ############################
 
 sudo add-apt-repository ppa:sunderme/texstudio
-sudo apt-get update
+sudo apt update
 sudo apt install texstudio
 sudo apt install texlive-base texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-fonts-recommended texlive-fonts-extra
 sudo apt install texlive-latex-recommended-doc

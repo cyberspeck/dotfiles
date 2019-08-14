@@ -1,6 +1,5 @@
 #!/bin/bash
 ############################
-# .make.sh
 # This script installs dependencies for debugging and compiling openMPI applications (e.g. Palabos)
 ############################
 

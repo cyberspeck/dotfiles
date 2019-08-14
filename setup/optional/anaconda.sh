@@ -1,6 +1,5 @@
 #!/bin/bash
 ############################
-# .make.sh
 # This script installs anaconda
 # and sets it up for use with vim-ipython
 ############################

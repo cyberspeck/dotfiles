@@ -1,4 +1,5 @@
-sudo apt install ipython3
+#!/bin/bash
+
 # alternatively try:
 #pip install ipython --user
 cd ~/.ipython/profile_default
