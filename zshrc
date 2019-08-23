@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 #
 if [ -f /etc/bashrc ]; then
-  /etc/bashrc
+   .  /etc/bashrc
 fi
 
 export PATH=/etc/alternatives:$PATH
