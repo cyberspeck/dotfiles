@@ -5,6 +5,7 @@ if [ -f /etc/bashrc ]; then
    .  /etc/bashrc
 fi
 
+export PATH=/sw/VASP.5.4.4/vasp.5.4.4/build/std:$PATH
 export PATH=/etc/alternatives:$PATH
 export PATH=/opt/rh/devtoolset-6/root/bin:$PATH
 
