@@ -142,6 +142,6 @@ export EDITOR=vim
 
 export DISPLAY=localhost:0.0
 
-if [ "$HOSTNAME" == C5LIRA11 ]; then
+if [ "$HOSTNAME" == C5LIRA11 ] || [ "$HOSTNAME" == C1LERA10 ]; then
     zsh
 fi
