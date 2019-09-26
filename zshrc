@@ -8,6 +8,8 @@ fi
 export PATH=/sw/VASP.5.4.4/vasp.5.4.4/build/std:$PATH
 export PATH=/etc/alternatives:$PATH
 export PATH=/opt/rh/devtoolset-6/root/bin:$PATH
+export PATH=/opt/rh/devtoolset-root/bin:$PATH
+export PATH=/home/$USER/bin:$PATH
 
 
 # Path to your oh-my-zsh installation.
