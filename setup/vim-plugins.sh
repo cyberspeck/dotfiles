@@ -22,3 +22,7 @@ git clone https://github.com/Valloric/YouCompleteMe.git YouCompleteMe
 cd YouCompleteMe
 git submodule update --init --recursive
 ./install.py --clang-completer
+
+# generate help for all plugins
+sudo vim "+helptags ALL" +q
+sudo nvim "+helptags ALL" +q
