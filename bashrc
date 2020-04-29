@@ -138,7 +138,7 @@ fi
 
 # added by Anaconda3 installer
 export PATH=~/anaconda3/bin:$PATH
-export EDITOR=vim
+export EDITOR=nvim
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
