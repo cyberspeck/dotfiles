@@ -3,7 +3,7 @@
 ########## Variables
 dir=~/dotfiles                    # dotfiles directory
 dir_backup=~/dotfiles_backup      # old dotfiles backup directory
-files="bashrc vimrc vim zshrc oh-my-zsh tmux.conf"    # list of files/folders to symlink in homedir
+files="gitconfig bashrc vimrc vim zshrc oh-my-zsh tmux.conf"    # list of files/folders to symlink in homedir
 ##########
 
 # create dotfiles_backup in homedir
