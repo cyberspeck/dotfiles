@@ -79,7 +79,7 @@ plugins=(
          common-aliases
          compleat
          last-working-dir
-         per-directory-history
+         #per-directory-history
          )
 
 source $ZSH/oh-my-zsh.sh
