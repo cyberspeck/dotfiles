@@ -2,6 +2,9 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+if [ -f /opt/openfoam7/etc/bashrc ]; then
+   .  /opt/openfoam7/etc/bashrc
+fi
 
 export PATH=/sw/VASP.5.4.4/vasp.5.4.4/build/std:$PATH
 export PATH=/etc/alternatives:$PATH
