@@ -171,10 +171,6 @@ noremap <right> 3<C-W>>
 " Changing focus between split windows
 " http://vimcasts.org/episodes/working-with-windows/
 " http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
 
 " Apply YCM FixIt
 map <F9> :YcmCompleter FixIt<CR>
