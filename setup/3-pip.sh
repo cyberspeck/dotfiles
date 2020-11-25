@@ -5,6 +5,8 @@ pip install neovim-remote --user
 
 pip install ranger-fm --user
 
+pip install grip
+
 pip install ipython --user
 cd ~/.ipython/profile_default
 touch ipython_config.py
