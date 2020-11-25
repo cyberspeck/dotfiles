@@ -25,3 +25,6 @@
 [submodule "vim/pack/cyberspeck/start/vimextensionopenfoam"]
 	path = vim/pack/cyberspeck/start/vimextensionopenfoam
 	url = https://bitbucket.org/shor-ty/vimextensionopenfoam.git
+[submodule "vim/pack/cyberspeck/start/goyo.vim"]
+	path = vim/pack/cyberspeck/start/goyo.vim
+	url = https://github.com/junegunn/goyo.vim.git
