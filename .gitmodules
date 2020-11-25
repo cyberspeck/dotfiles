@@ -1,0 +1,24 @@
+[submodule "vim/pack/cyberspeck/start/vim-airline"]
+	path = vim/pack/cyberspeck/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "vim/pack/cyberspeck/start/vim-bujo"]
+	path = vim/pack/cyberspeck/start/vim-bujo
+	url = https://github.com/vuciv/vim-bujo
+[submodule "vim/pack/cyberspeck/start/YouCompleteMe"]
+	path = vim/pack/cyberspeck/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe
+[submodule "vim/pack/cyberspeck/start/master"]
+	path = vim/pack/cyberspeck/start/master
+	url = https://bitbucket.org/shor-ty/vimextensionopenfoam/src/master/
+[submodule "vim/pack/cyberspeck/start/vim-fugitive"]
+	path = vim/pack/cyberspeck/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/pack/cyberspeck/start/vimtex"]
+	path = vim/pack/cyberspeck/start/vimtex
+	url = https://github.com/lervag/vimtex/
+[submodule "vim/pack/cyberspeck/start/vim-tmux-navigator"]
+	path = vim/pack/cyberspeck/start/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = http://github.com/robbyrussell/oh-my-zsh.git
