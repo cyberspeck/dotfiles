@@ -85,7 +85,7 @@ plugins=(
          )
 
 source $ZSH/oh-my-zsh.sh
-source ~/dotfiles/oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
