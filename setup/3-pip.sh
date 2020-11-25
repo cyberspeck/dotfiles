@@ -1,7 +1,11 @@
 #!/bin/bash
 
-# alternatively try:
-#pip install ipython --user
+pip install neovim --user
+pip install neovim-remote --user
+
+pip install ranger-fm --user
+
+pip install ipython --user
 cd ~/.ipython/profile_default
 touch ipython_config.py
 echo "c.TerminalInteractiveShell.editing_mode = 'vi'" >> ipython_config.py
