@@ -28,3 +28,6 @@
 [submodule "vim/pack/cyberspeck/start/goyo.vim"]
 	path = vim/pack/cyberspeck/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
+[submodule "vim/pack/cyberspeck/start/vim-markdown"]
+	path = vim/pack/cyberspeck/start/vim-markdown
+	url = https://github.com/gabrielelana/vim-markdown.git
