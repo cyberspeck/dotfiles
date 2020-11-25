@@ -7,9 +7,6 @@
 [submodule "vim/pack/cyberspeck/start/YouCompleteMe"]
 	path = vim/pack/cyberspeck/start/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe
-[submodule "vim/pack/cyberspeck/start/master"]
-	path = vim/pack/cyberspeck/start/master
-	url = https://bitbucket.org/shor-ty/vimextensionopenfoam/src/master/
 [submodule "vim/pack/cyberspeck/start/vim-fugitive"]
 	path = vim/pack/cyberspeck/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
@@ -25,3 +22,6 @@
 [submodule "zsh-syntax-highlighting"]
 	path = zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "vim/pack/cyberspeck/start/vimextensionopenfoam"]
+	path = vim/pack/cyberspeck/start/vimextensionopenfoam
+	url = https://bitbucket.org/shor-ty/vimextensionopenfoam.git
