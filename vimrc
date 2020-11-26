@@ -257,3 +257,5 @@ let g:python3_host_prog = "/usr/bin/python38"
 nnoremap <C-T> :term ++rows=20 <CR>
 " https://vim.fandom.com/wiki/Toggle_auto-indenting_for_code_paste
 set pastetoggle=<F2>
+
+silent! helptags ALL
