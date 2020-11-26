@@ -262,4 +262,11 @@ let g:deoplete#enable_at_startup = 1
 " deoplete tab-complete
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
+" https://github.com/gabrielelana/vim-markdown
+let g:markdown_enable_mappings = 0
+" https://github.com/plasticboy/vim-markdown
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_no_default_key_mappings = 1
+let g:vim_markdown_conceal = 0
+
 silent! helptags ALL
