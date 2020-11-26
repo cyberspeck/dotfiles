@@ -1,13 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 #
-if [ -f /etc/bashrc ]; then
-   .  /etc/bashrc
-fi
-
-#if [ -f /opt/openfoam7/etc/bashrc ]; then
-#   .  /opt/openfoam7/etc/bashrc
-#fi
 alias of7='source /opt/openfoam7/etc/bashrc'
 alias of8='source /opt/openfoam8/etc/bashrc'
 
