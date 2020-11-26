@@ -2,19 +2,12 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-#if [ -f /opt/openfoam7/etc/bashrc ]; then
-#   .  /opt/openfoam7/etc/bashrc
-#fi
 alias of7='source /opt/openfoam7/etc/bashrc'
 alias of8='source /opt/openfoam8/etc/bashrc'
 
 export PATH=/sw/VASP.5.4.4/vasp.5.4.4/build/std:$PATH
 export PATH=/etc/alternatives:$PATH
 export PATH=/opt/rh/devtoolset-6/root/bin:$PATH
-
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
 
 # If not running interactively, don't do anything
 case $- in
@@ -36,10 +29,6 @@ HISTFILESIZE=2000
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
-
-# If set, the pattern "**" used in a pathname expansion context will
-# match all files and zero or more directories and subdirectories.
-#shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -141,8 +130,6 @@ fi
 # added by Anaconda3 installer
 export PATH=~/anaconda3/bin:$PATH
 export EDITOR=nvim
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 
 export DISPLAY=localhost:0.0
