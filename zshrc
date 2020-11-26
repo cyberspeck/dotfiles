@@ -79,8 +79,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -89,12 +87,6 @@ export LANG=en_GB.UTF-8
 
 #  http://math.hws.edu/eck/cs225/s03/compiler.html
 alias c="g++ -g -Wall"
-
-#  https://ericlin1001.github.io/use-trash-instead-of-rm/
-#  https://github.com/andreafrancia/trash-cli
-alias del="trash"
-alias del-restore="restore-trash" # since trash-restore is easy to use than original restore-trash.
-
 
 export PATH=/opt/tmux/bin:$PATH
 export PATH=/opt/gnuplot-5.2.3/bin:$PATH
@@ -105,12 +97,6 @@ export PATH=~/anaconda3/bin:$PATH
 
 export EDITOR='nvim'
 export VISUAL='nvim'
-
-
-alias config="git --git-dir=.dotfiles --work-tree=/home/david/"
-alias configs="git --git-dir=.dotfiles --work-tree=/home/david/ status -uno"
-
-alias cdp="cd /mnt/c/Users/david/programming"
 
 # enable vi editing mode
 bindkey -v
