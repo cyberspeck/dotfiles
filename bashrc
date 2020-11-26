@@ -133,7 +133,3 @@ export EDITOR=nvim
 
 
 export DISPLAY=localhost:0.0
-
-if [ "$HOSTNAME" == C5LIRA11 ] || [ "$HOSTNAME" == C1LERA10 ]; then
-    zsh
-fi
