@@ -131,5 +131,3 @@ fi
 export PATH=~/anaconda3/bin:$PATH
 export EDITOR=nvim
 
-
-export DISPLAY=localhost:0.0

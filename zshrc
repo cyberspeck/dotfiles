@@ -155,5 +155,3 @@ unsetopt BG_NICE
 
 # disable 'ask for confirmation'
 unalias rm
-
-export DISPLAY=localhost:0.0
