@@ -150,8 +150,6 @@ bindkey -M viins 'jk' vi-cmd-mode
 # so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
 stty -ixon
 
-#https://github.com/microsoft/WSL/issues/1887
-unsetopt BG_NICE
 
 # disable 'ask for confirmation'
 unalias rm
