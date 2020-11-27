@@ -131,3 +131,5 @@ fi
 export PATH=~/anaconda3/bin:$PATH
 export EDITOR=nvim
 
+# 201124 - added by Herrn Fischer:
+module add null
