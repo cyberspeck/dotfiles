@@ -273,5 +273,7 @@ nmap <C-S> <Plug>BujoAddnormal
 imap <C-S> <Plug>BujoAddinsert
 nmap <C-Q> <Plug>BujoChecknormal
 imap <C-Q> <Plug>BujoCheckinsert
+let g:bujo#window_width = 50
+let g:bujo#todo_file_path = "/mnt/c/Users/BlacherD/OneDrive - AIT/projects/bujo"
 
 silent! helptags ALL
