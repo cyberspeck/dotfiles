@@ -142,4 +142,8 @@ unsetopt BG_NICE
 # disable 'ask for confirmation'
 unalias rm
 
+
+alias cdp='cd /mnt/c/Users/BlacherD/programming'
+alias cdo='cd "/mnt/c/Users/BlacherD/OneDrive - AIT/projects/"'
+
 export DISPLAY=localhost:0.0
