@@ -3,11 +3,11 @@ if [ -f /etc/bashrc ]; then
 fi
 
 alias of7='source /opt/openfoam7/etc/bashrc'
-alias of8='source /opt/openfoam8/etc/bashrc'
+#alias of8='source /opt/openfoam8/etc/bashrc'
 
-export PATH=/sw/VASP.5.4.4/vasp.5.4.4/build/std:$PATH
-export PATH=/etc/alternatives:$PATH
-export PATH=/opt/rh/devtoolset-6/root/bin:$PATH
+#export PATH=/sw/VASP.5.4.4/vasp.5.4.4/build/std:$PATH
+#export PATH=/etc/alternatives:$PATH
+#export PATH=/opt/rh/devtoolset-6/root/bin:$PATH
 
 # If not running interactively, don't do anything
 case $- in
