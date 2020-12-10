@@ -276,4 +276,9 @@ imap <C-Q> <Plug>BujoCheckinsert
 let g:bujo#window_width = 50
 let g:bujo#todo_file_path = "/mnt/c/Users/BlacherD/OneDrive - AIT/projects/bujo"
 
+nnoremap <leader>c :sp /mnt/c/Users/BlacherD/OneDrive - AIT/projects/captains-log.md<cr>
+" insert current date
+:nnoremap <F5> "=strftime("%c")<CR>P
+:inoremap <F5> <C-R>=strftime("%c")<CR>
+
 silent! helptags ALL
