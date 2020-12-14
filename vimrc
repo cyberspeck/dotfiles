@@ -278,7 +278,6 @@ let g:bujo#todo_file_path = "/mnt/c/Users/BlacherD/OneDrive - AIT/projects/bujo"
 
 nnoremap <leader>c :sp /mnt/c/Users/BlacherD/OneDrive - AIT/projects/captains-log.md<cr>
 " insert current date
-:nnoremap <F5> "=strftime("%c")<CR>P
-:inoremap <F5> <C-R>=strftime("%c")<CR>
-
+:nnoremap <F5> "=strftime("%a %d %b %Y %H:%M")<CR>P
+:inoremap <F5> <C-R>=strftime("%a %d %b %Y %H:%M")<CR>
 silent! helptags ALL
