@@ -7,6 +7,8 @@ pip install ranger-fm --user
 
 pip install grip
 
+pip install tv2
+
 pip install ipython --user
 cd ~/.ipython/profile_default
 touch ipython_config.py
