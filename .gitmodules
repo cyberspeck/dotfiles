@@ -4,9 +4,6 @@
 [submodule "vim/pack/cyberspeck/start/vim-bujo"]
 	path = vim/pack/cyberspeck/start/vim-bujo
 	url = https://github.com/vuciv/vim-bujo
-[submodule "vim/pack/cyberspeck/start/YouCompleteMe"]
-	path = vim/pack/cyberspeck/start/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe
 [submodule "vim/pack/cyberspeck/start/vim-fugitive"]
 	path = vim/pack/cyberspeck/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
