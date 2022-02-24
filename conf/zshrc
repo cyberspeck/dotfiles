@@ -1,15 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 #
-alias of7='source /opt/openfoam7/etc/bashrc'
-alias of8='source /opt/openfoam8/etc/bashrc'
 
-export PATH=/sw/VASP.5.4.4/vasp.5.4.4/build/std:$PATH
-export PATH=/etc/alternatives:$PATH
-export PATH=/opt/rh/devtoolset-6/root/bin:$PATH
-export PATH=/opt/rh/devtoolset-root/bin:$PATH
-export PATH=/home/$USER/bin:$PATH
-
+#export PATH=/home/$USER/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -85,12 +78,7 @@ source ~/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # You may need to manually set your language environment
 export LANG=en_GB.UTF-8
 
-#  http://math.hws.edu/eck/cs225/s03/compiler.html
-alias c="g++ -g -Wall"
-
-export PATH=/opt/tmux/bin:$PATH
-export PATH=/opt/gnuplot-5.2.3/bin:$PATH
-export PATH=$PATH:$HOME/.local/bin
+source ~/.aliases
 
 # added by Anaconda3 installer
 export PATH=~/anaconda3/bin:$PATH
@@ -139,11 +127,5 @@ stty -ixon
 #https://github.com/microsoft/WSL/issues/1887
 unsetopt BG_NICE
 
-# disable 'ask for confirmation'
-unalias rm
-
-
-alias cdp='cd /mnt/c/Users/BlacherD/programming'
-alias cdo='cd "/mnt/c/Users/BlacherD/OneDrive - AIT/projects/"'
 
 export DISPLAY=localhost:0.0
