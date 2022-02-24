@@ -1,11 +1,26 @@
 #!/bin/bash
 
-sudo add-apt-repository ppa:neovim-ppa/stable 
-sudo add-apt-repository ppa:inkscape.dev/stable
+#sudo add-apt-repository ppa:neovim-ppa/stable
+#sudo add-apt-repository ppa:inkscape.dev/stable
 
-sudo apt install python3-pip python3-wheel python3-dev
-sudo apt install build-essential gcc-8 g++-8 cmake 
+sudo apt install zsh
 sudo apt install neovim
-sudo apt install git zsh xclip tmux tmuxp synaptic htop latexmk gnuplot gnuplot-doc ffmpeg imagemagick inkscape
+sudo apt install ranger
+sudo apt install git
+sudo apt install xclip
+sudo apt install tmux
+sudo apt install tmuxp
+sudo apt install htop
 
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 800 --slave /usr/bin/g++ g++ /usr/bin/g++-8
+sudo apt install inkscape
+sudo apt install gnuplot
+sudo apt install gnuplot-doc
+
+sudo apt install python3-pip
+sudo apt install python3-wheel
+sudo apt install python3-dev
+
+sudo apt install latexmk
+
+#sudo apt install ffmpeg imagemagick
+#sudo apt install build-essential gcc-8 g++-8 cmake
