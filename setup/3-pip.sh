@@ -1,34 +1,19 @@
 #!/bin/bash
 
-pip install neovim --user
-pip install neovim-remote --user
+# Things that should be installed using pip:
+pip install grip --user
+pip install tv2 --user
+# update these things:
+pip install --upgrade grip
+pip install --upgrade tv2
 
-pip install ranger-fm --user
 
-pip install grip
+# if apt install does not work
+#pip install ranger-fm --user
 
-pip install tv2
+# if conda is not used:
+#pip install ipython --user
 
-pip install ipython --user
-cd ~/.ipython/profile_default
-touch ipython_config.py
-echo "c.TerminalInteractiveShell.editing_mode = 'vi'" >> ipython_config.py
-cd ~/.ipython/profile_default/startup
-cat <<EOT >> keybindings.py
-from IPython import get_ipython
-from prompt_toolkit.enums import DEFAULT_BUFFER
-from prompt_toolkit.filters import HasFocus, ViInsertMode
-from prompt_toolkit.key_binding.vi_state import InputMode
-
-ip = get_ipython()
-
-def switch_to_navigation_mode(event):
-  vi_state = event.cli.vi_state
-  vi_state.input_mode = InputMode.NAVIGATION
-
-if getattr(ip, 'pt_app', None):
-  registry = ip.pt_app.key_bindings
-  registry.add_binding(u'j',u'k',
-                       filter=(HasFocus(DEFAULT_BUFFER)
-                                & ViInsertMode()))(switch_to_navigation_mode) 
-EOT
+# is this even necessary?
+#pip install neovim --user
+#pip install neovim-remote --user
