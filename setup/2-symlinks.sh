@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ########## Variables
-dot=~/dotfiles
+dot=~/dotfiles/conf
 dir_backup=~/dotfiles_backup
-files="gitconfig bashrc vimrc vim zshrc oh-my-zsh tmux.conf tvrc"    # list of files/folders to symlink in homedir
+files="bashrc gitconfig tmux.conf tvrc vim vimrc zshrc"    # list of files/folders to symlink in homedir
 ##########
 
 echo -n "Creating $dir_backup for any existing dotfiles"
@@ -17,7 +17,11 @@ for file in $files; do
     ln -s $dot/$file ~/.$file
 done
 
+# make sure .config dirs exist
+mkdir -p ~/.config/ranger
+mkdir -p ~/.config/nvim
+
 mv ~/.config/ranger/rc.conf $dir_backup
 mv ~/.config/nvim/init.vim $dir_backup
-ln -s $dot/$file ~/.config/ranger/rc.conf
-ln -s $dot/$file ~/.config/nvim/init.vim
+ln -s $dot/rc.conf ~/.config/ranger/rc.conf
+ln -s $dot/init.vim ~/.config/nvim/init.vim
