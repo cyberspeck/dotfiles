@@ -7,7 +7,6 @@ sudo apt install zsh
 sudo apt install neovim
 sudo apt install ranger
 sudo apt install git
-sudo apt install xclip
 sudo apt install tmux
 sudo apt install tmuxp
 sudo apt install htop

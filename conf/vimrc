@@ -114,11 +114,9 @@ vnoremap <F1> <ESC>
 " ; does the same as :
 nnoremap ; :
 
+"https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
+set clipboard=unnamedplus
 
-" http://vimcasts.org/episodes/accessing-the-system-clipboard-from-vim/
-if has('unnamedplus')
-  set clipboard=unnamed,unnamedplus
-endif
 " y and p to/from system clipboard:
 " http://vim.wikia.com/wiki/Copy_and_paste_between_sessions_using_a_temporary_file
 " vmap <leader>c "+y     " Yank current selection into system clipboard
