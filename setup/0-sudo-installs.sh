@@ -10,6 +10,7 @@ sudo apt install git
 sudo apt install tmux
 sudo apt install tmuxp
 sudo apt install htop
+sudo apt install thefuck
 
 sudo apt install inkscape
 sudo apt install gnuplot
