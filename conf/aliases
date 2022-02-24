@@ -4,6 +4,3 @@ alias of8='source /opt/openfoam8/etc/bashrc'
 
 alias cdp='cd /mnt/c/Users/BlacherD/programming'
 alias cdo='cd "/mnt/c/Users/BlacherD/OneDrive - AIT/projects/"'
-
-# disable 'ask for confirmation'
-unalias rm
