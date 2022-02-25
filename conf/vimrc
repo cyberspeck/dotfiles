@@ -1,19 +1,82 @@
 """"""""""""""""
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
-
-" Declare the list of plugins.
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vuciv/vim-bujo'
-Plug 'gabrielelana/vim-markdown'
 Plug 'junegunn/goyo.vim'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'gabrielelana/vim-markdown'
+"Plug 'plasticboy/vim-markdown'
+Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-"Plug 'vim-airline/vim-airline'
+Plug 'neovim/nvim-lspconfig'
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'} " 9000+ Snippets
+Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
+Plug 'lervag/vimtex/', {'for': ':latex'}
+"Plug 'https://github.com/nvim-telescope/telescope.nvim' "also needs plenary:
+"Plug 'https://github.com/nvim-lua/plenary.nvim'
 "Plug 'tpope/vim-fugitive'
-Plug 'lervag/vimtex/'
+"Plug 'airblade/vim-gitgutter'
 "Plug 'https://bitbucket.org/shor-ty/vimextensionopenfoam.git'
-" List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+""""""""""""""""
+"""" Plug in specific settings:
+" https://github.com/lightline.vim
+set noshowmode "conceal 'insert' below status bar
+" https://github.com/vim-gitgutter
+set updatetime=100
+" https://github.com/gabrielelana/vim-markdown
+let g:markdown_enable_mappings = 0
+" https://github.com/plasticboy/vim-markdown
+"let g:vim_markdown_folding_disabled = 1
+"let g:vim_markdown_no_default_key_mappings = 1
+"let g:vim_markdown_conceal = 0
+" https://github.com/vuciv/vim-bujo
+nmap <C-S> <Plug>BujoAddnormal
+imap <C-S> <Plug>BujoAddinsert
+nmap <C-Q> <Plug>BujoChecknormal
+imap <C-Q> <Plug>BujoCheckinsert
+let g:bujo#window_width = 50
+let g:bujo#todo_file_path = "/mnt/c/Users/BlacherD/OneDrive - AIT/projects/bujo"
+" https://github.com/lervag/vimtex
+let g:tex_flavor = 'latex'
+let g:vimtex_view_general_viewer = 'zathura'
+let g:vimtex_compiler_progname = 'nvr'
+" https://github.com/KeitaNakamura/tex-conceal.vim
+"set conceallevel=0
+"let g:tex_conceal="abdgms"
+"
+
+lua << EOF
+local lspconfig = require('lspconfig')
+-- Automatically start coq
+vim.g.coq_settings = { auto_start = 'shut-up' }
+-- Enable some language servers with the additional completion capabilities offered by coq_nvim
+local servers = {'pyright', 'tsserver' }
+for _, lsp in ipairs(servers) do
+  lspconfig[lsp].setup(require('coq').lsp_ensure_capabilities({
+    -- on_attach = my_custom_on_attach,
+  }))
+end
+EOF
+
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+    disable = {},
+  },
+  indent = {
+    enable = false,
+    disable = {},
+  },
+  ensure_installed = {
+    "python",
+    "latex",
+    "json",
+    "yaml",
+  },
+}
+EOF
 """"""""""""""""
 
 "  forces Vim to source .vimrc file if it present in working directory
@@ -156,6 +219,7 @@ nnoremap <leader>Q :q!<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>W :w!<CR>
 
+nnoremap <buffer> <F6> :exec '!clear; python3' shellescape(@%, 1)<cr>
 nnoremap <leader>m :!clear<CR> :!make<CR>
 nnoremap <F7> :w<CR> :!g++ -g -Wall % -o
 nnoremap <F8> :w<CR> :!g++ -g -Wall % -o %< && ./%< <CR>
@@ -183,13 +247,7 @@ noremap <right> 3<C-W>>
 " http://vimcasts.org/episodes/working-with-windows/
 " http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
 
-" Apply YCM FixIt
-map <F9> :YcmCompleter FixIt<CR>
-
 colorscheme torte
-" change color of syntax highlighting
-" https://github.com/Valloric/YouCompleteMe#diagnostic-highlighting-groups
-" highlight YcmErrorLine ctermbg=lightblue
 
 "  https://stackoverflow.com/questions/237289/vim-configure-line-number-coloring
 :highlight LineNr ctermfg=grey
@@ -211,14 +269,6 @@ nnoremap <leader>d ]s
 nnoremap <leader>D ]S
 nnoremap <leader>z z=1<CR><CR>
 nnoremap <leader>Z zg
-
-" AIRLINE
-" Enable the list of buffers
-let g:airline#extensions#tabline#enabled = 1
-" Show just the filename
-let g:airline#extensions#tabline#fnamemod = ':t'
-" Use 256 colours (Use this setting only if your terminal supports 256 colours)
-set t_Co=256
 
 " buffers
 " https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
@@ -242,13 +292,6 @@ endif
 nmap gG :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
 
-let g:tex_flavor = 'latex'
-let g:vimtex_view_general_viewer = 'zathura'
-let g:vimtex_compiler_progname = 'nvr'
-
-" https://github.com/KeitaNakamura/tex-conceal.vim 
-set conceallevel=0
-let g:tex_conceal="abdgms"
 
 " inoremap ´ `
 " nnoremap ´ `
@@ -259,33 +302,8 @@ imap Ö {
 imap ä ]
 imap Ä }
 
-" UltiSnips and YCM:
-" https://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme
-
-nnoremap <buffer> <F6> :exec '!clear; python' shellescape(@%, 1)<cr>
-
-nnoremap <C-T> :term ++rows=20 <CR>
 " https://vim.fandom.com/wiki/Toggle_auto-indenting_for_code_paste
 set pastetoggle=<F2>
-
-let g:deoplete#enable_at_startup = 1
-" deoplete tab-complete
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
-" https://github.com/gabrielelana/vim-markdown
-let g:markdown_enable_mappings = 0
-" https://github.com/plasticboy/vim-markdown
-let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_no_default_key_mappings = 1
-let g:vim_markdown_conceal = 0
-
-" https://github.com/vuciv/vim-bujo
-nmap <C-S> <Plug>BujoAddnormal
-imap <C-S> <Plug>BujoAddinsert
-nmap <C-Q> <Plug>BujoChecknormal
-imap <C-Q> <Plug>BujoCheckinsert
-let g:bujo#window_width = 50
-let g:bujo#todo_file_path = "/mnt/c/Users/BlacherD/OneDrive - AIT/projects/bujo"
 
 nnoremap <leader>c :e /mnt/c/Users/BlacherD/OneDrive - AIT/projects/bujo/captains-log.md<cr>
 " insert current date

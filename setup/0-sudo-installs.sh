@@ -5,6 +5,10 @@
 
 sudo apt install zsh
 sudo apt install neovim
+sudo apt install npm
+sudo npm i -g pyright
+sudo apt install universal-ctags
+s
 sudo apt install ranger
 sudo apt install git
 sudo apt install tmux
@@ -24,3 +28,6 @@ sudo apt install latexmk
 
 #sudo apt install ffmpeg imagemagick
 #sudo apt install build-essential gcc-8 g++-8 cmake
+
+echo "you might need to update Node.js for lsp to work in nvim, see this guide"
+echo "https://phoenixnap.com/kb/update-node-js-version"
