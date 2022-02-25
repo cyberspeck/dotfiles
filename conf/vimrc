@@ -1,22 +1,22 @@
 """"""""""""""""
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'vuciv/vim-bujo'
-Plug 'junegunn/goyo.vim'
-Plug 'gabrielelana/vim-markdown'
-"Plug 'plasticboy/vim-markdown'
+Plug 'https://github.com/christoomey/vim-tmux-navigator'
+Plug 'https://github.com/vuciv/vim-bujo'
+Plug 'https://github.com/junegunn/goyo.vim'
+Plug 'https://github.com/gabrielelana/vim-markdown'
+"Plug 'https://github.com/plasticboy/vim-markdown'
 Plug 'https://github.com/rafaqz/ranger.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'neovim/nvim-lspconfig'
-Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
-Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'} " 9000+ Snippets
-Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
-Plug 'lervag/vimtex/', {'for': ':latex'}
+Plug 'https://github.com/itchyny/lightline.vim'
+Plug 'https://github.com/nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'https://github.com/neovim/nvim-lspconfig'
+Plug 'https://github.com/ms-jpq/coq_nvim', {'branch': 'coq'}
+Plug 'https://github.com/ms-jpq/coq.artifacts', {'branch': 'artifacts'} " 9000+ Snippets
+Plug 'https://github.com/ms-jpq/coq.thirdparty', {'branch': '3p'}
+Plug 'https://github.com/lervag/vimtex/', {'for': ':latex'}
 "Plug 'https://github.com/nvim-telescope/telescope.nvim' "also needs plenary:
 "Plug 'https://github.com/nvim-lua/plenary.nvim'
-"Plug 'tpope/vim-fugitive'
-"Plug 'airblade/vim-gitgutter'
+"Plug 'https://github.com/tpope/vim-fugitive'
+"Plug 'https://github.com/airblade/vim-gitgutter'
 "Plug 'https://bitbucket.org/shor-ty/vimextensionopenfoam.git'
 call plug#end()
 """"""""""""""""
