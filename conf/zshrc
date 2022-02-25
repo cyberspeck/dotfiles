@@ -103,7 +103,7 @@ bindkey -M viins 'jk' vi-cmd-mode
 # so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
 stty -ixon
 
-export DISPLAY=localhost:0.0
+export DISPLAY=$(cd /mnt/c && route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
 
 ########## other options:
 
