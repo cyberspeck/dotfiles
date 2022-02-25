@@ -21,6 +21,9 @@ Plug 'https://github.com/lervag/vimtex/', {'for': ':latex'}
 call plug#end()
 """"""""""""""""
 """" Plug in specific settings:
+" https://github.com/christoomey/vim-tmux-navigator
+" instead of coq's binding
+nnoremap <silent> <C-H> :TmuxNavigateLeft<cr>
 " https://github.com/lightline.vim
 set noshowmode "conceal 'insert' below status bar
 " https://github.com/vim-gitgutter
