@@ -5,6 +5,7 @@ Plug 'vuciv/vim-bujo'
 Plug 'junegunn/goyo.vim'
 Plug 'gabrielelana/vim-markdown'
 "Plug 'plasticboy/vim-markdown'
+Plug 'https://github.com/rafaqz/ranger.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
