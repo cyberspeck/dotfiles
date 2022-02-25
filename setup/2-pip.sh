@@ -15,5 +15,6 @@ pip install --upgrade tv2
 #pip install ipython --user
 
 # is this even necessary?
-#pip install neovim --user
-#pip install neovim-remote --user
+#python2 -m pip install --user --upgrade pynvim
+python3 -m pip install --user --upgrade pynvim
+python3 -m pip install --user --upgrade neovim-remote
