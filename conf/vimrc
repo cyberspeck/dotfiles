@@ -183,7 +183,7 @@ nnoremap <leader>I :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap j gj
 nnoremap k gk
 
-" get rid of helpt key
+" get rid of help key
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
