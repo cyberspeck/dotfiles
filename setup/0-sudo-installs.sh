@@ -8,7 +8,7 @@ sudo apt install neovim
 sudo apt install npm
 sudo npm i -g pyright
 sudo apt install universal-ctags
-s
+
 sudo apt install ranger
 sudo apt install git
 sudo apt install tmux
